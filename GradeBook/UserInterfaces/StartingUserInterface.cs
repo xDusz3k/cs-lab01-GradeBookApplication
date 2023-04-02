@@ -42,12 +42,12 @@ namespace GradeBook.UserInterfaces
             }
             if (parts[2] == "standard")
             {
-                BaseGradeBook gradeBook = new BaseGradeBook(name);
+                BaseGradeBook gradeBook = new StandardGradeBook(name);
                 GradeBookUserInterface.CommandLoop(gradeBook);
             }
             else if (parts[2] == "ranked")
             {
-                BaseGradeBook gradeBook = new BaseGradeBook(name);
+                BaseGradeBook gradeBook = new RankedGradeBook(name);
                 GradeBookUserInterface.CommandLoop(gradeBook);
             }
             else
